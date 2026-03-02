@@ -1,0 +1,96 @@
+# Obsidian Git 推荐的 .gitignore
+
+# 🔒 隐私目录（不推送到 GitHub）
+10-19个人生活/
+40-49知识与参考/
+20-29科研工作/23论文与出版物/
+
+# Obsidian 插件配置（可选，但建议排除）
+.obsidian/workspace
+.obsidian/workspace-mobile
+
+# macOS 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+~$*
+
+# 备份文件
+*.bak
+*.backup
+
+# 大文件附件（排除所有大文件以避免超过 GitHub 限制）
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+*.avi
+*.zip
+*.zipx
+*.rar
+*.7z
+*.tar
+*.gz
+*.exe
+*.dmg
+*.pkg
+*.dylib
+*.dll
+*.so
+
+# Node.js 和构建工具
+node_modules/
+package-lock.json
+dist/
+build/
+.cache/
+
+# Zotero 附件（如果使用 Zotero 同步）
+storage/
+zotero.sqlite*
+*.sqlite
+*.pdfannots2json*
+
+# 但建议保留 Obsidian 附件
+!附件/
+!assets/
+
+# Node.js (如果使用任何 JS 工具)
+node_modules/
+package-lock.json
+
+# Python (如果使用任何 Python 脚本)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Zotero 附件（如果使用 Zotero 同步）
+storage/
+zotero.sqlite*
+*.sqlite
+
+# 其他
+*.log
